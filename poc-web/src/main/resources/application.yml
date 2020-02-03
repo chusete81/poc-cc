@@ -1,0 +1,7 @@
+# web
+server:
+  port: 8080
+
+logging:
+  level:
+    org.chusete81.poc_cc.web: info

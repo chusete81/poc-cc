@@ -1,0 +1,54 @@
+version: '2.2'
+services:
+  poc-kafka:
+    image: org.chusete81/poc-kafka
+    container_name: poc-kafka
+    environment:
+      KAFKA_LISTENERS: PLAINTEXT://:9092
+    networks:
+      - poc-net
+    expose:
+      - "9092"
+
+  poc-back:
+    image: org.chusete81/poc-back
+    container_name: poc-back
+    networks:
+      - poc-net
+    expose:
+      - "9000"
+
+  poc-connectors:
+    image: org.chusete81/poc-connectors
+    container_name: poc-connectors
+    environment:
+      POC_CC_KAFKA_URL: poc-kafka:9092
+      POC_CC_CONN_BACKEND_URL: http://poc-back:9000/invoke
+    networks:
+      - poc-net
+    expose:
+      - "8900"
+
+  poc-hub:
+    image: org.chusete81/poc-hub
+    container_name: poc-hub
+    environment:
+      POC_CC_KAFKA_URL: poc-kafka:9092
+    networks:
+      - poc-net
+    expose:
+      - "8888"
+
+  poc-web:
+    image: org.chusete81/poc-web
+    container_name: poc-web
+    environment:
+      POC_CC_HUB_ENDPOINT: http://poc-hub:8888
+    networks:
+      - poc-net
+    ports:
+      - "8080:8080"
+      
+networks:
+  poc-net:
+    driver: bridge

@@ -1,0 +1,12 @@
+# conectores
+server:
+  port: 8900
+#  tomcat:
+#    max-threads: 400
+
+logging:
+  level:
+    org.apache.kafka: warn
+    org.chusete81.kafka_connector: warn #info
+    org.chusete81.poc_cc.connectors: info
+    org.chusete81.poc_cc.connectors.monitoring: debug

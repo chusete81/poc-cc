@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title>Resultados</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	</head>
+	<body>
+		<b>NIF:</b>
+		<input type="text" th:value="${nif}" readonly="readonly" />
+		<span><a href="/">Nueva solicitud</a></span>
+		<br/>
+		<br/>
+		<br/>
+
+		<div th:include="resultsFrame"></div>
+	</body>
+</html>

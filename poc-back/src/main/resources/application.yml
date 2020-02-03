@@ -1,0 +1,10 @@
+# backends
+server:
+  port: 9000
+#  tomcat:
+#    max-threads: 400
+
+logging:
+  level:
+    org.chusete81.poc_cc.back: debug # TODO info
+    org.chusete81.poc_cc.back.monitoring: debug

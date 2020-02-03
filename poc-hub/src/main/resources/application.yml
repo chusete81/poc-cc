@@ -1,0 +1,12 @@
+# hub
+server:
+  port: 8888
+#  tomcat:
+#    max-threads: 200
+
+logging:
+  level:
+    org.apache.kafka: warn
+    org.chusete81.kafka_connector: info
+    org.chusete81.poc_cc.hub: debug # TODO info
+    org.chusete81.poc_cc.monitoring: debug
