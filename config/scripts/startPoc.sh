@@ -20,7 +20,7 @@ mkdir target
 echo Descargando codigo fuente
 git clone -v https://chusete81@github.com/chusete81/kafka-connector.git
 echo ""
-git clone -v -b upgrade https://chusete81@github.com/chusete81/poc-cc.git
+git clone -v https://chusete81@github.com/chusete81/poc-cc.git
 echo ""
 
 echo Iniciando ZooKeeper
