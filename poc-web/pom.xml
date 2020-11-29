@@ -10,7 +10,7 @@
     </parent>
     <groupId>org.chusete81.poc-cc</groupId>
     <artifactId>poc-web</artifactId>
-    <version>2.0.0</version>
+    <version>2.0.1</version>
     <name>poc-web</name>
     <description>PoC-web front</description>
 
@@ -36,7 +36,7 @@
         <dependency>
             <groupId>org.chusete81.poc-cc</groupId>
             <artifactId>poc-common</artifactId>
-            <version>2.0.0</version>
+            <version>2.0.1</version>
         </dependency>
     </dependencies>
 

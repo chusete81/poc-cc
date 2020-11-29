@@ -5,10 +5,10 @@ export POC_CC_CONN_CONSUMER_THREADS=96
 export POC_CC_KAFKA_URL=localhost:9092
 #export POC_CC_BACK_ERROR_PERC=1
 
-VER_BACK=2.0.0
-VER_CONN=2.0.0
-VER_HUB=2.0.0
-VER_WEB=2.0.0
+VER_BACK=2.0.1
+VER_CONN=2.0.1
+VER_HUB=2.0.1
+VER_WEB=2.0.1
 
 cd $HOME
 WORKDIR=workspace-$(date +%y%m%d)-$(date +%H%M%S) #%N)
