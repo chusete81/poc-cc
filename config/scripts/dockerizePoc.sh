@@ -23,6 +23,8 @@ cd $HOME/$WORKDIR/kafka-connector/kafka-connector
 mvn install -DskipTests -T 1C
 
 cd $HOME/$WORKDIR/poc-cc
+# remove this
+git checkout develop
 mvn package -DskipTests -T 1C
 echo ""
 
